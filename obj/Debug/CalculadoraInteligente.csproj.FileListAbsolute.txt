@@ -1,0 +1,11 @@
+C:\CsWS_Forms\CalculadoraInteligente\bin\Debug\CalculadoraInteligente.exe.config
+C:\CsWS_Forms\CalculadoraInteligente\bin\Debug\CalculadoraInteligente.exe
+C:\CsWS_Forms\CalculadoraInteligente\bin\Debug\CalculadoraInteligente.pdb
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.csproj.AssemblyReference.cache
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.csproj.SuggestedBindingRedirects.cache
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.Form1.resources
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.Properties.Resources.resources
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.csproj.GenerateResource.cache
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.csproj.CoreCompileInputs.cache
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.exe
+C:\CsWS_Forms\CalculadoraInteligente\obj\Debug\CalculadoraInteligente.pdb
