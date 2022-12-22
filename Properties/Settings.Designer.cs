@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CalculadoraInteligente.Properties
+namespace SmartCalc.Properties
 {
 
 

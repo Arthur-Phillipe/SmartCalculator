@@ -1,0 +1,11 @@
+C:\CsWS\CsWS_Forms\SmartCalc\bin\Debug\SmartCalc.exe.config
+C:\CsWS\CsWS_Forms\SmartCalc\bin\Debug\SmartCalc.exe
+C:\CsWS\CsWS_Forms\SmartCalc\bin\Debug\SmartCalc.pdb
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.csproj.AssemblyReference.cache
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.csproj.SuggestedBindingRedirects.cache
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.Form1.resources
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.Properties.Resources.resources
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.csproj.GenerateResource.cache
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.csproj.CoreCompileInputs.cache
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.exe
+C:\CsWS\CsWS_Forms\SmartCalc\obj\Debug\SmartCalc.pdb

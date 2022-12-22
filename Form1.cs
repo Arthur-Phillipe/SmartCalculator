@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CalculadoraInteligente
+namespace SmartCalc
 {
     public partial class Form1 : Form
     {
@@ -20,12 +20,6 @@ namespace CalculadoraInteligente
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -37,7 +31,7 @@ namespace CalculadoraInteligente
             lblOper.Text = oper = "+";
         }
         private void buttonSubt_Click(object sender, EventArgs e)
-        {         
+        {
             Calcula();
             lblOper.Text = oper = "-";
         }
@@ -57,6 +51,7 @@ namespace CalculadoraInteligente
             Calcula();
             lblOper.Text = oper = "=";
         }
+
         void Calcula() //fecha o cálculo do operador anterior
         {
             digitando = false;
@@ -85,28 +80,32 @@ namespace CalculadoraInteligente
             {
                 result = val1;
 
-                //  txtVisor.Text = Convert.ToString(result);
-                //  txtOper.Text = txtVisor.Text;
+              //   txtVisor.Text = Convert.ToString(result);  // por como comentário
+              //   txtOper.Text = txtVisor.Text;  // por como comentário
             }
-           txtOper.Text = Convert.ToString(result);
-           
+            txtOper.Text = Convert.ToString(result);
+
         }
+
+
+
         void LimpaVisor()
         {
             lblOper.Text = oper;
-            txtVisor.Text = "";         
+            txtVisor.Text = "";
             val1 = 0;
         }
-        void TeclaNum (string n)
+        void TeclaNum(string n)
         {
-            if ( !digitando)
+            if (!digitando)
             {
-              //  txtOper.Text = txtVisor.Text;
+              //   txtOper.Text = txtVisor.Text; //  por como comentário
                 LimpaVisor();
-            }   
+            }
             txtVisor.Text += n;
             digitando = true;
         }
+
         private void button0_Click(object sender, EventArgs e)
         {
             TeclaNum("0");
@@ -140,6 +139,17 @@ namespace CalculadoraInteligente
         {
             TeclaNum("7");
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button8_Click(object sender, EventArgs e)
         {
             TeclaNum("8");
@@ -148,5 +158,6 @@ namespace CalculadoraInteligente
         {
             TeclaNum("9");
         }
+
     }
 }
