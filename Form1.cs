@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
 namespace SmartCalc
@@ -14,8 +11,8 @@ namespace SmartCalc
     {
 
         decimal val1 = 0, val2 = 0, result = 0;
-        string oper = "="; // precisa iniciar com  "=";
-        bool digitando = false; // se já iniciou digitar numero
+        string oper = ""; // precisa iniciar com  "=";
+        bool digitando = false; // se tá no meio da digitação do numero
         public Form1()
         {
             InitializeComponent();
@@ -27,83 +24,87 @@ namespace SmartCalc
 
         private void buttonSoma_Click(object sender, EventArgs e)
         {
+            lblOper.Text =  "+";
             Calcula();
-            lblOper.Text = oper = "+";
+            oper = "+";
         }
         private void buttonSubt_Click(object sender, EventArgs e)
         {
+            lblOper.Text = "-";
             Calcula();
-            lblOper.Text = oper = "-";
+            oper = "-";
         }
         private void buttonMult_Click(object sender, EventArgs e)
         {
+            lblOper.Text = "*";
             Calcula();
-            lblOper.Text = oper = "*";
+            oper = "*";
         }
         private void buttonDivi_Click(object sender, EventArgs e)
         {
+            lblOper.Text = "/";
             Calcula();
-            lblOper.Text = oper = "/";
+            oper = "/";
         }
         private void buttonEqua_Click(object sender, EventArgs e)
         {
-
+            lblOper.Text = "=";  
             Calcula();
-            lblOper.Text = oper = "=";
+            oper = "=";
         }
 
         void Calcula() //fecha o cálculo do operador anterior
         {
             digitando = false;
+     
             val1 = decimal.Parse(txtVisor.Text);
             if (oper == "+")
             {
                 result += val1;
-                LimpaVisor();
+               
             }
             else if (oper == "-")
             {
                 result -= val1;
-                LimpaVisor();
+            
             }
             else if (oper == "*")
             {
                 result *= val1;
-                LimpaVisor();
+              
             }
             else if (oper == "/")
             {
                 result /= val1;
-                LimpaVisor();
+               
             }
-            else // oper anterior é "="
+            else // oper anterior é "=" INICIA AQUI (VOLTA ESTADO INICIAL)
             {
                 result = val1;
-
-              //   txtVisor.Text = Convert.ToString(result);  // por como comentário
-              //   txtOper.Text = txtVisor.Text;  // por como comentário
+                txtVisor.Text = Convert.ToString(result);
+               
             }
             txtOper.Text = Convert.ToString(result);
 
+            if (lblOper.Text == "=") txtVisor.Text = txtOper.Text;
+            else LimpaVisor(); 
         }
-
-
 
         void LimpaVisor()
         {
-            lblOper.Text = oper;
+    
             txtVisor.Text = "";
-            val1 = 0;
+            
         }
         void TeclaNum(string n)
         {
             if (!digitando)
             {
-              //   txtOper.Text = txtVisor.Text; //  por como comentário
+                lblOper.Text = oper;
                 LimpaVisor();
             }
             txtVisor.Text += n;
-            digitando = true;
+            digitando = true;          
         }
 
         private void button0_Click(object sender, EventArgs e)
@@ -138,16 +139,6 @@ namespace SmartCalc
         private void button7_Click(object sender, EventArgs e)
         {
             TeclaNum("7");
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button8_Click(object sender, EventArgs e)
